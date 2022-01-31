@@ -42,7 +42,8 @@ function squareSolution(a, b, c)
   if(a === 0)
     return null;
    
-    return ((-b) + ((b * b - 4 * a * c) * (0.5))) / (2 * a)
+    
+    return { X=((-b) + ((b * b - 4 * a * c) * (0.5))) / (2 * a), Y=((-b) - ((b * b - 4 * a * c) * (0.5))) / (2 * a)};
 
 }
  //1. функция которая вернет сезон года в зависимости от полученного номера месяца
@@ -182,5 +183,7 @@ function squareSolution(a, b, c)
 
 //   defineSizon('January');
 
-
+   isAdult(18, 'Egypt');
  
+   let result_X = squareSolution(22, 33, 12).X;
+   let result_Y = squareSolution(22, 33, 12).Y;
